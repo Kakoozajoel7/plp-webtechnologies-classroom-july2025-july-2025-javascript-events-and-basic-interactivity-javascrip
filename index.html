@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Web Page with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Interactive Web Pages</h1>
+        <button id="theme-toggle">Toggle Light/Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- Counter Interactive Feature -->
+        <section id="counter-section">
+            <h2>Counter Game</h2>
+            <p>Clicks: <span id="counter-value">0</span></p>
+            <button id="increment-btn">Increment</button>
+            <button id="reset-btn">Reset</button>
+        </section>
+        
+        <!-- Collapsible FAQ Section -->
+        <section id="faq-section">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <button class="faq-question">What is JavaScript?</button>
+                <div class="faq-answer">JavaScript is a programming language that brings interactivity to web pages.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What is DOM manipulation?</button>
+                <div class="faq-answer">DOM manipulation means using JavaScript to change content, structure, or style of a webpage in real-time.</div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section id="form-section">
+            <h2>Sign Up Form</h2>
+            <form id="signup-form" novalidate>
+                <label>
+                    Name:
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </label>
+                <label>
+                    Password:
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message" id="password-error"></span>
+                </label>
+                <button type="submit">Sign Up</button>
+                <div id="form-success"></div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
